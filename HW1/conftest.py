@@ -11,7 +11,7 @@ url1 = my_dict['url1']
 
 @pytest.fixture()
 def login():
-    obj_data = requests.post(url=url, data={'username': 'rav53-85@mail.ru', 'password': 'X578Z4AE'})
+    obj_data = requests.post(url=url, data={'username': 'username', 'password': 'password'})
     token = obj_data.json()['token']
     return token
 
